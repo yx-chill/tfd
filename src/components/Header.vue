@@ -3,6 +3,7 @@
 
 <template>
   <header class="header">
+    <div class="header-top"></div>
     <h1>Header</h1>
   </header>
 </template>
