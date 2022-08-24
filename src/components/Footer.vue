@@ -4,13 +4,18 @@
 
 <template>
   <footer class="footer">
-    <p>Footer</p>
+    <div class="copyright">Copyright &copy; 2022 TFD. All rights reserved. Design by HR</div>
   </footer>
 </template>
 
 <style lang="scss" scoped>
 .footer {
-  color: #fff;
-  background: $main;
+
+  .copyright {
+    color: #fff;
+    background: $main;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 </style>

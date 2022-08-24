@@ -1,1 +1,57 @@
 $main: #AE0D15;
+
+
+
+
+
+
+/*rwd*/
+$xxl: 1440px;
+$xl: 1199px;
+$lg: 991px;
+$md: 767px;
+$sm: 575px;
+$xs: 480px;
+$xxs: 320px;
+
+@mixin xxl {
+  @media (min-width: $xxl) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: $xs) {
+    @content;
+  }
+}
+
+@mixin xxs {
+  @media (min-width: $xxs) {
+    @content;
+  }
+}

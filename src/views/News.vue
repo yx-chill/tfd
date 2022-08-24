@@ -3,9 +3,8 @@
 </script>
 
 <template>
-<p>NEWS</p>
+  <p>NEWS</p>
 </template>
 
 <style lang="scss" scpoed>
-
 </style>

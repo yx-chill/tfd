@@ -1,18 +1,21 @@
 <script setup>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-
+import Gotop from '@/components/Gotop.vue'
 import storage from './includes/storage'
 import { RouterView } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { watch } from 'vue';
-
-// window.addEventListener('scroll', throttle(test, 400))
+import { ref, watch } from 'vue';
 
 const { t, locale } = useI18n()
 
 watch(locale, (newlocale) => {
   storage.set('locale', newlocale)
+})
+
+document.addEventListener('scroll', function () {
+  if (document.documentElement.scrollTop > 200) {
+  }
 })
 
 function throttle(fn, delay) {
@@ -47,11 +50,6 @@ function throttle(fn, delay) {
     <RouterView />
     <Footer />
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -84,11 +82,17 @@ function throttle(fn, delay) {
   <p>{{ t("subject") }}</p>
   <p>{{ t("message") }}</p>
   <p>{{ t("upload") }}</p>
+
+  <button @click="locale = 'zh-TW'">中文</button>
+  <button @click="locale = 'en-US'">英文</button>
+
+  <Gotop ref="gotop" />
 </template>
 
 <style lang="scss" scoped>
 .body {
   display: flex;
   flex-direction: column;
+  height: 300vh;
 }
 </style>
