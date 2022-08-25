@@ -8,17 +8,19 @@ import storage from '@/includes/storage'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import './assets/main.css'
-
-import zh from '@/language/zh-TW.json'
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
+import tw from '@/language/zh-TW.json'
 import en from '@/language/en-US.json'
 
 const i18n = createI18n({
   legacy: false,
-  locale: storage.get('locale') ?? 'zh-TW',
-  fallbackLocale: 'zh-TW',
+  // locale: storage.get('locale') ?? 'tw',
+  locale: 'tw',
+  fallbackLocale: 'tw',
   messages: {
-    "zh-TW": zh,
-    "en-US": en
+    "tw": tw,
+    "en": en
   }
 })
 

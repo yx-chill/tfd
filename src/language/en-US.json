@@ -4,5 +4,7 @@
   "date": "date",
   "subject": "subject",
   "message": "message",
-  "upload": "upload"
+  "upload": "upload",
+
+  "share": "Share"
 }

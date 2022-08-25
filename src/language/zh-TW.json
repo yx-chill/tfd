@@ -4,5 +4,7 @@
   "date": "日期",
   "subject": "標題",
   "message": "訊息內容",
-  "upload": "上傳"
+  "upload": "上傳",
+
+  "share": "分享"
 }
