@@ -6,5 +6,9 @@
   "message": "message",
   "upload": "upload",
 
-  "share": "Share"
+  "share": "Share",
+  "map": "Map",
+  "home": "Home",
+  "contactus": "Contact us",
+  "securitypolicy": "Security Policy"
 }
